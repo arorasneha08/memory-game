@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Game Mode - Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/mode.css" />
+</head>
+
+<body class="mode-body">
+  <div class="mode-container">
+    <h1 class="game-title">🎮 Choose Game Mode</h1>
+    <p id="welcome-text" class="welcome-text"></p>
+
+    <div class="mode-selection">
+      <h2>Select Play Mode</h2>
+      <div class="mode-buttons">
+        <button class="mode-btn single">One Player</button>
+        <button class="mode-btn multi">Two Player</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="mode-modal">
+    <div class="modal-content">
+      <h2>🚀 Let’s Go!</h2>
+      <p>Get ready to challenge your memory skills!</p>
+    </div>
+  </div>
+
+  <script src="../scripts/mode.js"></script>
+</body>
+
+</html>

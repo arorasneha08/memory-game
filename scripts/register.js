@@ -2,7 +2,7 @@ function makeHash(password) {
     let hash = '';
     for (let i = 0; i < password.length; i++) {
         let code = password.charCodeAt(i) * (i + 1);
-        hash += code.toString().slice(-2); // take last two digits of each step
+        hash += code.toString().slice(-2); 
     }
     return hash.split('').reverse().join('');
 }
@@ -67,7 +67,7 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     localStorage.setItem("memoryUser", JSON.stringify(newUser));
 
     alert("Registration successful!");
-    window.location.href = "../pages/home.html";
+    window.location.href = "../pages/mode.html";
 });
 
 document.getElementById("dashboard-btn").addEventListener("click", () => {

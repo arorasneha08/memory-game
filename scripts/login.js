@@ -24,5 +24,5 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
     localStorage.setItem("memoryUser", JSON.stringify(user));
     alert("Login successful!");
-    window.location.href = "home.html";
+    window.location.href = "../pages/mode.html";
 });
