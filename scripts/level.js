@@ -29,7 +29,7 @@ buttons.forEach(function (button) {
         modal.classList.remove("hidden");
 
         setTimeout(function () {
-            window.location.href = "../pages/game.html";
+            window.location.href = "../pages/theme.html";
         }, 1000);
     });
 });

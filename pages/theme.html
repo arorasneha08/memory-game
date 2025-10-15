@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Theme - Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css" />
+</head>
+
+<body class="theme-body">
+  <div class="theme-container">
+    <h1 class="game-title">🎨 Choose Your Theme</h1>
+    <p id="welcome-text" class="welcome-text"></p>
+
+    <div class="theme-selection">
+      <h2>Pick Game Type</h2>
+      <div class="theme-buttons">
+        <button class="theme-btn emoji">🧩 Emoji</button>
+        <button class="theme-btn trivia">📘 Trivia</button>
+      </div>
+    </div>
+
+    <div class="subcategory-container hidden" id="subcategory-container">
+      <h3>Select Category</h3>
+      <select id="subcategory-select" class="subcategory-select">
+        <option value="" disabled selected>Select category</option>
+      </select>
+      <button class="play-btn" id="play-btn">Start Game 🚀</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="start-modal">
+    <div class="modal-content">
+      <h2>🎯 Game Starting...</h2>
+      <p>Get ready to challenge your memory!</p>
+    </div>
+  </div>
+
+  <script src="../scripts/theme.js"></script>
+</body>
+</html>
